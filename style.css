@@ -1,0 +1,304 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --yellow: #ffcc29;
+    --blue: #1d539e;
+    --gray: #828799;
+    --page-background: #f9fbfc;
+    --color-base: #1E2338;
+
+    font-size: 62.5%;
+}
+
+
+body {
+    background-color: var(--page-background);
+
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 45rem;
+
+    background-color: var(--blue);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+header h1 {
+    color: #fff;
+
+    font-size: 4.8rem;
+}
+
+header p {
+    color: #fff;
+    width: 55rem;
+    margin-top: 2rem;
+
+    font-size: 18px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 2rem;
+    margin-top: -12rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+
+
+    width: 35.5rem;
+    height: 47rem;
+
+    padding: 3rem;
+    border-radius: .8rem;
+
+    background-color: var(--page-background);
+    box-shadow: 0px 1px 2px 0px rgba(142, 150, 185, 0.25);
+}
+
+.card h1 {
+    font-size: 1.8rem;
+    font-weight: 600;
+
+    color: var(--color-base);
+}
+
+.card .price {
+    display: flex;
+    align-items: baseline;
+
+    height: 4.9rem;
+    
+}
+
+.price p {
+    font-size: 3.6rem;
+    font-weight: 700;
+
+    color: var(--color-base);
+}
+
+.price span {
+    color: var(--color-base);
+
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.price .mounth {
+    margin-left: .5rem;
+}
+
+.mounth span {
+    color: var(--gray);
+    font-size: 1.8rem;
+
+
+
+}
+
+.description {
+    color: var(--gray);
+
+    font-size: 1.4rem;
+
+    margin-top: 1rem;
+    padding-bottom: 2rem;
+
+    border-bottom: 1px solid var(--gray);
+}
+
+.acess {
+    margin-top: 2rem;
+}
+
+.acess ul {
+    list-style: none;
+
+    
+}
+
+.acess li {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+
+    margin-bottom: 2rem;
+}
+
+.acess img {
+    width: 1.8rem;
+    height: 1.8rem;
+}
+
+.acess span {
+    color: var(--gray);
+    
+    font-size: 1.4rem;
+    font-weight: 600;
+
+}
+
+.sign {
+    display: flex;
+    height: 100vh;
+    align-items: flex-end;
+}
+
+button {
+    width: 100%;
+
+
+    color: var(--blue);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    background: none;
+    
+    border: 1px solid var(--blue);
+    border-radius: 1rem;
+
+    padding: 1.2rem 2.4rem;
+
+    cursor: pointer;
+
+}
+
+button:hover {
+    background-color: var(--blue);
+    color: #fff;
+
+    transition: 300ms ;
+}
+
+
+
+/* Card Principal */
+
+.container-main {
+    height: 49rem;
+    width: 35.5rem;
+}
+
+
+.header-card {
+    height: 7.6rem;
+    padding: 3rem;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    background-color: var(--yellow);
+    border-radius: .8rem .8rem 0 0;
+    box-shadow: 0px 1px 2px 0px rgba(142, 150, 185, 0.25);
+
+}
+
+.header-card h1 {
+    color: var(--blue);
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.header-card h3 {
+    color: var(--page-background);
+
+    padding: .8rem 2.4rem;
+    background-color: var(--blue);
+    border-radius: 4rem;
+}
+
+.basic {
+    padding: 3rem;
+    height: 41.4rem;
+    width: 35.5rem;
+
+    background-color: var(--page-background);
+    box-shadow: 0px 1px 2px 0px rgba(142, 150, 185, 0.25);
+    border-radius: 0 0 .8rem .8rem;
+}
+
+.basic .sign {
+    height: 10vh;
+} 
+
+
+
+footer {
+    width: 100%;
+    height: 4rem;
+
+    background-color: var(--blue);
+    
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    border-radius:  .4rem .4rem 0 0;
+    box-shadow: 0px 1px 2px 0px rgba(142, 150, 185, 0.25);
+}
+
+@media (min-width: 920px) {
+    footer {
+        position: absolute;
+        bottom: 0;
+    }
+}
+
+footer p {
+    color: var(--color-base);
+
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--page-background);
+}
+
+
+
+/* Mobile */
+
+.mobile-device {
+    width: 100vw;
+}
+
+.mobile-device header p {
+    width: 100vw;
+}
+
+
+.mobile-device main {
+    margin-top: -9rem;
+    flex-direction: column;
+}
+
+.mobile-device footer {
+    margin-top: 3rem;
+    position: relative;
+}
